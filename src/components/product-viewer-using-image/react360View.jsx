@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./style.css";
+import CamelImages from "./image";
 const ProductViewerUsingImage = ({ images }) => {
   const [frameIndex, setFrameIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -109,5 +110,6 @@ export default function ProductViewer() {
         `https://fastly-production.24c.in/webin/360/output_${i + 1}.jpeg`
     );
 
-  return <ProductViewerUsingImage images={images} />;
+  // return <ProductViewerUsingImage images={images} />;
+  return <ProductViewerUsingImage images={CamelImages} />;
 }
